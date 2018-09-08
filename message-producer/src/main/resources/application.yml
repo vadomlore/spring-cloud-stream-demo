@@ -1,0 +1,20 @@
+server:
+  port: 8889
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        rabbitmq2018:
+          binder: rabbit
+          destination: rabitDes01
+        mns2018:
+          binder: mns
+          destination: mns-test-queue-name
+---
+spring:
+  aliyun:
+    mns:
+      accountendpoint: http://{endpoint}/
+      accesskeyid:  {accesskeyid}
+      accesskeysecret: {accesskeysecret}

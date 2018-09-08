@@ -1,0 +1,2 @@
+mns=\
+org.springframework.cloud.stream.binder.mns.MNSMessageChannelBinderConfiguration
